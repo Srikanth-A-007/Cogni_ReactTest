@@ -1,0 +1,106 @@
+/* Container for the entire date picker */
+.date-picker-container {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Input field and calendar icon styling */
+  .date-picker-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .date-picker-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .calendar-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Calendar pop-up styling with animations */
+  .calendar-container {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 15px;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+  }
+  
+  .calendar-day-name {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #333;
+  }
+  
+  .calendar-day {
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .calendar-day:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .empty {
+    pointer-events: none;
+    background-color: transparent;
+    cursor: default;
+  }
+  
+  .calendar-day.selected {
+    background-color: #3f51b5;
+    color: white;
+  }
+  

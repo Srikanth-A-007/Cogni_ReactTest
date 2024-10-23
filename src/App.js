@@ -1,11 +1,12 @@
-// C:\Srikanth\React_JS\01basicreact\src\App.js
+// src/App.js
 import React from 'react';
 import StandardButton from './components/standard button/standard button';
 import StandardTextbox from './components/standard textbox/standard textbox';
 import StandardCheckbox from './components/standard checkbox/standard checkbox';
 import StandardDropdown from './components/standard dropdown/standard dropdown';
 import StandardTile from './components/standard-tile/standard-tile';
-import StandardRadioButton from './components/standard-radio-button/standard-radio-button'; // Change the import name to StandardRadioButton
+import StandardRadioButton from './components/standard-radio-button/standard-radio-button';
+import DatePicker from './components/standard-datetime-control/standarddatetime'; // Updated import
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
       <StandardTextbox />
       <StandardDropdown />
       <StandardCheckbox />
-      <StandardRadioButton /> {/* Updated component usage */}
-      
+      <StandardRadioButton />
+
+      {/* Add the DatePicker component */}
+      <DatePicker />
+
       <div className="tile-container">
         <StandardTile 
           imageUrl="https://via.placeholder.com/200" 
