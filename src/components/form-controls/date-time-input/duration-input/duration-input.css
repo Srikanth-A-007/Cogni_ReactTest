@@ -1,0 +1,84 @@
+.duration-picker {
+    display: flex;
+    flex-direction: column; /* Stack the label and controls vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    width: 400px; /* Set a fixed width for the whole component */
+    /*margin: 20px auto; /* Center the component in the middle of the page */
+    padding: 10px;
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  .label {
+    font-size: 16px; /* Increased font size for labels */
+    color: #555;
+    margin-bottom: 5px; /* Space between label and input */
+  }
+  
+  .value-controls {
+    display: flex; /* Arrange input box and dropdown horizontally */
+    align-items: center; /* Center vertically */
+    border: 1px solid #ccc; /* Border to make it look like a single input box */
+    border-radius: 3px; /* Rounded corners */
+    background-color: white; /* Background color for the input box */
+    padding: 5px; /* Padding for inner spacing */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .input-wrapper {
+    display: flex; /* Flex layout for input and buttons */
+    align-items: center; /* Center items vertically */
+    flex: 2; /* Allow input to take more space */
+  }
+  
+  .duration-input {
+    flex: 1; /* Let the input take available space */
+    padding: 10px; /* Increase padding for input box */
+    font-size: 20px; /* Increase font size for better visibility */
+    text-align: center; /* Center the text */
+    border: none; /* Remove border to create seamless look */
+    outline: none; /* Remove outline */
+    background: transparent; /* Transparent background */
+  }
+  
+  .control-buttons {
+    display: flex; /* Flexbox for buttons */
+  }
+  
+  .control-button {
+    width: 40px; /* Set fixed width for buttons */
+    height: 40px; /* Set fixed height for buttons */
+    font-size: 20px; /* Larger font size for buttons */
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    margin-left: 5px; /* Space between input and button */
+  }
+  
+  .control-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .control-button:focus {
+    outline: none;
+  }
+  
+  .duration-select {
+    padding: 10px; /* Increase padding */
+    font-size: 16px; /* Adjust font size */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    flex: 1; /* Allow dropdown to take available space */
+    margin-left: 5px; /* Space between input and dropdown */
+    background-color: white; /* Match the background color with the input */
+    border-radius: 0; /* Remove rounded corners for better alignment */
+    box-shadow: none; /* Remove shadow for dropdown */
+    overflow: hidden; /* Prevent overflow */
+    max-width: 100px; /* Set a max width to avoid overflowing the container */
+  }
+  

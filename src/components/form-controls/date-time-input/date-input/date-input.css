@@ -1,0 +1,71 @@
+.date-picker-container {
+    position: relative;
+  }
+  
+  .date-picker-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-picker-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center; /* Center text in input */
+  }
+  
+  .calendar-icon {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .calendar-container {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between; /* Distributes space between the dropdowns */
+    align-items: center; /* Centers items vertically */
+    padding: 5px;
+    background: #f0f0f0;
+  }
+  
+  .calendar-header select {
+    margin: 0 10px; /* Adds spacing around the dropdowns */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; /* Allows the dropdowns to grow equally */
+    text-align: center; /* Center text in dropdown */
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .calendar-day-name,
+  .calendar-day {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .calendar-day:hover {
+    background: #f0f0f0;
+  }
+  
+  .empty {
+    background: transparent;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
