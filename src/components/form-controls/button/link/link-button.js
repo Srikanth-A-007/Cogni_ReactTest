@@ -1,10 +1,13 @@
-// LinkButton.js
 import React from 'react';
 import './link-button.css';
 
-const LinkButton = ({ label, onClick }) => {
+const LinkButton = ({ label }) => {
+  const handleClick = () => {
+    window.open('https://www.google.com', '_blank'); // Open Google homepage in a new tab
+  };
+
   return (
-    <button className="link-button" onClick={onClick}>
+    <button className="link-button" onClick={handleClick}>
       {label}
     </button>
   );

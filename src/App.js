@@ -2,7 +2,6 @@
 import React from 'react';
 import StandardButton from './components/standard_button/standard button';
 import StandardTextbox from './components/standard textbox/standard textbox';
-import StandardCheckbox from './components/standard checkbox/standard checkbox';
 import StandardDropdown from './components/standard dropdown/standard dropdown';
 import StandardTile from './components/standard-tile/standard-tile';
 import StandardRadioButton from './components/standard-radio-button/standard-radio-button'; // Change the import name to StandardRadioButton
@@ -14,8 +13,7 @@ function App() {
       <h1>Hello Cogni</h1>
       <StandardButton />
       <StandardTextbox />
-      <StandardDropdown />
-      <StandardCheckbox />
+      <StandardDropdown />   
       <StandardRadioButton /> {/* Updated component usage */}
       <Showcase /> {/* Correctly capitalize the component name */}
       

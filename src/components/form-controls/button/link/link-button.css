@@ -1,14 +1,19 @@
 .link-button {
     background: none;
-    color: blue;
+    color: var(--main-color);
     border: none;
     padding: 0;
-    text-decoration: underline;
+    
     cursor: pointer;
     font-size: inherit;
   }
   
   .link-button:hover {
-    color: darkblue;
-  }
+    color: var(--button-hover-color);
+    text-decoration: underline;
+  text-decoration-color: #1cafa6; /* Custom underline color */
+  text-decoration-thickness: 1px; /* Custom thickness */
+  text-decoration-style: solid; /* You can also use 'dashed', 'dotted', etc. */
+}
+  
   
