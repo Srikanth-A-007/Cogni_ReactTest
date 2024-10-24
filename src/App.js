@@ -1,12 +1,12 @@
 // src/App.js
 import React from 'react';
-import StandardButton from './components/standard button/standard button';
+import StandardButton from './components/standard_button/standard button';
 import StandardTextbox from './components/standard textbox/standard textbox';
 import StandardCheckbox from './components/standard checkbox/standard checkbox';
 import StandardDropdown from './components/standard dropdown/standard dropdown';
 import StandardTile from './components/standard-tile/standard-tile';
-import StandardRadioButton from './components/standard-radio-button/standard-radio-button';
-import DatePicker from './components/standard-datetime-control/standarddatetime'; // Updated import
+import StandardRadioButton from './components/standard-radio-button/standard-radio-button'; // Change the import name to StandardRadioButton
+import Showcase from './showcase';
 
 function App() {
   return (
@@ -16,11 +16,9 @@ function App() {
       <StandardTextbox />
       <StandardDropdown />
       <StandardCheckbox />
-      <StandardRadioButton />
-
-      {/* Add the DatePicker component */}
-      <DatePicker />
-
+      <StandardRadioButton /> {/* Updated component usage */}
+      <Showcase /> {/* Correctly capitalize the component name */}
+      
       <div className="tile-container">
         <StandardTile 
           imageUrl="https://via.placeholder.com/200" 
