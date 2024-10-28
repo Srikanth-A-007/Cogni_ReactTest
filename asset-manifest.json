@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Cogni_ReactTest/static/css/main.05c9e566.css",
-    "main.js": "/Cogni_ReactTest/static/js/main.9d220cf9.js",
+    "main.css": "/Cogni_ReactTest/static/css/main.bf976b28.css",
+    "main.js": "/Cogni_ReactTest/static/js/main.3e5919ad.js",
     "static/js/453.7b184d6d.chunk.js": "/Cogni_ReactTest/static/js/453.7b184d6d.chunk.js",
     "index.html": "/Cogni_ReactTest/index.html",
-    "main.05c9e566.css.map": "/Cogni_ReactTest/static/css/main.05c9e566.css.map",
-    "main.9d220cf9.js.map": "/Cogni_ReactTest/static/js/main.9d220cf9.js.map",
+    "main.bf976b28.css.map": "/Cogni_ReactTest/static/css/main.bf976b28.css.map",
+    "main.3e5919ad.js.map": "/Cogni_ReactTest/static/js/main.3e5919ad.js.map",
     "453.7b184d6d.chunk.js.map": "/Cogni_ReactTest/static/js/453.7b184d6d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05c9e566.css",
-    "static/js/main.9d220cf9.js"
+    "static/css/main.bf976b28.css",
+    "static/js/main.3e5919ad.js"
   ]
 }
